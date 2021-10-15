@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SL MINIJUEGOS</title>
+        <script src=" https://cdnjs.cloudflare.com/ajax/libs/phaser-ce/2.16.1/phaser.min.js"></script>
+        <script src="Minigame1.js"></script>
+        <script src="Minigame2.js"></script>
+        <script src="Minigame3.js"></script>
+        <script src="Minigame4.js"></script>
+        <script src="Menu.js"></script>
+</head>
+<body>
+    <SCRIPT> 
+        //Variables globales
+
+    </SCRIPT>
+    <script>
+    var game = new Phaser.Game(960, 960, Phaser.CANVAS, 'phaser-example');
+
+
+    game.state.add("Minigame1",Minigame1);
+    game.state.add("Minigame2",Minigame2);
+    game.state.add("Minigame3",Minigame3);
+    game.state.add("Minigame4",Minigame4);
+    game.state.add("Menu",Menu);
+    game.state.start("Menu",Menu);
+    //game.state.start("Minigame3",Minigame3);
+    </script>
+
+</body>
+
+</html>
+
